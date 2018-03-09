@@ -7,16 +7,16 @@ and open the template in the editor.
 <html>
     <head>
 
-        <title>SliderJquerySinPlugins</title>
+        <title>RegistroEmrpesa</title>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="css/css.css" rel="stylesheet" type="text/css"/>
-        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/css.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/font-awesome.css" rel="stylesheet" type="text/css"/>
 
-        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
-        <script src="js/js.js" type="text/javascript"></script>     
+        <script src="../js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="../js/js.js" type="text/javascript"></script>     
 
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
@@ -34,7 +34,7 @@ and open the template in the editor.
             <div class="row">
                 <div class="btn-group btn-group-justified colores">
                     <div class="btn-group">
-                        <a href="index.html">
+                        <a href="../index.html">
                         <button type="button"  class="btn btn-nav">
                             <span class="glyphicon glyphicon-folder-close"></span>
                             <p><font color="black">Inicio</font></p>
@@ -64,66 +64,54 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-
-        <!--Carrusel-->
-
-        <div class="contenedorCarrusel"  >
-            <div class="slideshow">
-                <ul class="slider">
-
-                    <li>
-                        <img src="img/1.jpg" alt=""/>
-                        <section class="caption">
-                            <h1> Lorem ipsum</h1>
-                            <p>Lorem este es para un parrafo</p>
-                        </section>
-                    </li>
-
-                    <li>
-                        <img src="img/2.jpg" alt=""/>
-                        <section class="caption">
-                            <h1> Lorem ipsum</h1>
-                            <p>Lorem este es para un parrafo</p>
-                        </section>
-                    </li>
-
-                    <li>
-                        <img src="img/3.jpg" alt=""/>
-                        <section class="caption">
-                            <h1> Lorem ipsum</h1>
-                            <p>Lorem este es para un parrafo</p>
-                        </section>
-                    </li>  
-
-                    <li>
-                        <img src="img/4.jpg" alt=""/>
-                        <section class="caption">
-                            <h1> Lorem ipsum</h1>
-                            <p>Lorem este es para un parrafo</p>
-                        </section>
-                    </li>
-
-                </ul>
-                <!--Hacemos nuestros circulos ... despues esta comentado
-                ya que se necesita ser dinamico-->
-                <ol class="">
-                    <!--se elimina ya que es dinamico-->
-                    <!--<li><span class="fa fa-circle"></span></li>
-                       <li><span class="fa fa-circle"></span></li>
-                       <li><span class="fa fa-circle"></span></li>
-                       <li><span class="fa fa-circle"></span></li>-->
-                </ol>
-
-                <!--Hacemos nuestras flechas-->
-                <div class="left">
-                    <span class="fa fa-chevron-left"></span>
-                </div>
-                <div class="right">
-                    <span class="fa fa-chevron-right"></span>
-                </div>
-
+        <!--Formulario de registro -->
+        <section id="contact">
+            <div class="section-content">
+                <h1 class="section-header">Registrar<span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Empresa</span></h1>
+                <h3>Con nosotros tendras la oportunidad de conseguir más personal para tu empresa.</h3>
             </div>
-        </div>
+            <div class="contact-section">
+                <div class="container">
+                    <form>
+                        <div class="col-md-6 form-line">
+                            <div class="form-group">
+                                <label for="exampleInputUsername">Nombre</label>
+                                <input type="text" class="form-control" id="" placeholder=" Ingresar Nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Ingresar Email">
+                            </div>	
+                            <div class="form-group">
+                                <label for="telephone">Teléfono</label>
+                                <input type="tel" class="form-control" id="telephone" placeholder=" Ingresar No.Teléfono">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for ="description"> Descripción</label>
+                                <textarea  class="form-control" id="description" placeholder="Ingresar Descripción..."></textarea>
+                            </div>
+                            <div>
+                                <!-- PayPal Logo -->
+                                <table border="0"  heigth="50" width="50">
+                                    
+                                    <tr><td align="center" >
+                                            <img  src="http://www.iconhot.com/icon/png/kaching-ecommerce-icons/128/paypal-card.png" alt="paypal"/>
+                                      
+                                    </tr>
+                                </table><!-- PayPal Logo -->
+                                 
+                            </div>
+                            <div>
+
+                                <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Registrar</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+        </section>
 
 
         <!-- line modal -->

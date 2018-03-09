@@ -130,10 +130,10 @@ body{
 .contenedorCarrusel{
 
 
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 80%;
-    top: 180px;
+    top: 10px;
     left: 0;   
     padding: 1px 1px; 
 }
@@ -190,13 +190,13 @@ body {
     transition: border 0.3s ease-out, color 0.3s ease 0.5s;
     -webkit-animation: pulsate 1.2s linear infinite;
     animation: pulsate 1.2s linear infinite;
-    
+
 }
 .btn-nav.active:before {
     content: '';
     position: absolute;
     border-style: solid;
-    
+
     border-width: 6px 6px 0;
     border-color: #1C2833   transparent;
     display: block;
@@ -261,11 +261,36 @@ body {
     margin-top: 0; 
 }
 
-.modal-footer .btn+.btn {
-    margin-left: 0px;
-}
 /* Css para el form dentro del modal */
+.containerPiePagina {
+    margin-top: 20px;
+    border-top: 1px solid white  ;
+    width: auto;
+    max-width: 1080px;
+    margin-left: 170px;
+    padding: 0 15px;
 
+}
+.containerPiePagina .text-muted {
+    margin: 0 0;
+}
+.PiePaginatext {
+    color: #ffffff;
+}
+
+#PiePagina {
+    /* position: static;*/
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 10px;
+
+
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
 /*Recuerdame  text option*/
 .panel-login {
     border-color: #ccc;
@@ -373,4 +398,67 @@ body {
     color: #fff;
     background-color: #1CA347;
     border-color: #1CA347;
+}
+
+
+/*Codigo de la pagina de registro de empresa*/
+/*Contact sectiom*/
+.content-header{
+    font-family: 'Oleo Script', cursive;
+    color:#fcc500;
+    font-size: 45px;
+}
+
+.section-content{
+    text-align: center; 
+
+}
+#contact{
+
+    font-family: 'Teko', sans-serif;
+    padding-top: 60px;
+    width: 100%;
+    width: 100vw;
+    height: 550px;
+    color : #fff;    
+}
+#imgPaypal{
+    width:120px; /* you can use % */
+    height: 60px;
+}
+.contact-section{
+    padding-top: 40px;
+}
+.contact-section .col-md-6{
+    width: 50%;
+}
+
+.form-line{
+    border-right: 1px solid #B29999;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+label{
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+}
+.form-control{
+    font-size: 1.3em;
+    color: #080808;
+}
+textarea.form-control {
+    height: 135px;
+    /* margin-top: px;*/
+}
+
+.submit{
+    font-size: 1.1em;
+    float: right;
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
+
 }
