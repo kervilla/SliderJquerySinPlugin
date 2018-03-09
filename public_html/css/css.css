@@ -260,14 +260,7 @@ body {
 .btn-group-login{
     margin-top: 0; 
 }
-.btn-close {
-    width: 40%;
-    margin-right:  23px;
-}
-.btn-vote{
-    margin-right:  63px;
-    width: 40%;
-}
+
 .modal-footer .btn+.btn {
     margin-left: 0px;
 }
